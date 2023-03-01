@@ -1,6 +1,8 @@
 ### Ignore these folders
 __pycache__/
 .vs/
+.DS_Store
+.ipynb_checkpoints
 derivatives/
 program/.ipynb_checkpoints
 program/events_data

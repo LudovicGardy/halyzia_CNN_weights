@@ -5,6 +5,8 @@ Depending on the amount of data to be analyzed or the time constraints of the us
 
 In a training set, the data of class 1 (e.g. FR) and class 2 (e.g. non-FR) can be balanced or not. In the reality of an EEG recording, the proportion of non-FR signal is obviously largely dominant. To account for this phenomenon, we trained several models by assigning an increasingly strong weight to the non-FR class. 
 
+As shown in data tables in this repository (Halyzia_weight_effect/markers_spike), false positives are almost always found on the same recording channels (GPH'2), as if they carry high frequencies that impact the detection, without this effect being caused by the spikes directly. Indeed, identical spikes on other recording channels are not detected.
+
 # CNN performance on Fast Ripples
 The model was evaluated on open source data [see ref. 1] containing 5760 Fast Ripples at different signal to noise ratios: 0, 5, 10 and 15 dB (1440 events per category).
 ![](illustrations/FRs_detection.png)

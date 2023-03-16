@@ -9,11 +9,11 @@ As shown in data tables in this repository ([main/markers_spike](https://github.
 
 # CNN performance on Fast Ripples
 The model was evaluated on open source data [see ref. 1] containing 5760 Fast Ripples at different signal to noise ratios: 0, 5, 10 and 15 dB (1440 events per category).
-![](illustrations/FRs_detection.png)
+![](illustrations/FR_detection.png)
 
 # CNN performance on non-FRs
 The model was evaluated on open source data [see ref. 1] containing 5760 Spikes (non-FR) at different signal to noise ratios: 0, 5, 10 and 15 dB (1440 events per category).
-![](illustrations/Spikes_detection.png)
+![](illustrations/Spike_detection.png)
 
 # References
 [1] Roehri, N., Pizzo, F., Bartolomei, F., Wendling, F., & Bénar, C. G. (2017a). What are the assets and weaknesses of HFO detectors? A benchmark framework based on realistic simulations. PLoS ONE, 12(4). https://doi.org/10.1371/journal.pone.0174702

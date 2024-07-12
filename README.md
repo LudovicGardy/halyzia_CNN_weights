@@ -1,13 +1,13 @@
 # Halyzia© / Ladybird Neural Network - Impact of class weights
 
 ## Description
-Halyzia©, also known as Ladybird, is a sophisticated software designed for the automatic detection of fast-ripples (FRs) in epilepsy, as described in the [doctoral thesis of L. Gardy](https://data.inpi.fr/brevets/FR3128111) and patented under [Brevet: FR3128111](http://thesesups.ups-tlse.fr/5164/1/2021TOU30190.pdf). This repository showcases a component of Halyzia© that is focused on the efficient automatic detection of Fast Ripples (FR) in epilepsy.
+Halyzia©, also known as Ladybird, is a sophisticated software designed for the automatic detection of fast-ripples (FRs) in epilepsy, as described in the [doctoral thesis of L. Gardy](http://thesesups.ups-tlse.fr/5164/1/2021TOU30190.pdf) and patented under [Brevet: FR3128111](https://data.inpi.fr/brevets/FR3128111). This repository showcases a component of Halyzia© that is focused on the efficient automatic detection of Fast Ripples (FR) in epilepsy.
 
 Depending on the amount of data to be analyzed, it may be interesting to vary the performance of the model, by varying the ratio between omissions and false positives. The more time we have to process the results, the less we will be constrained on false positives. The reduction of false positives generally goes hand in hand with a reduction of omissions. Conversely, the less time user has, the less time he will accept to sort out false positives, often at the cost of an increase in the number of omissions.
 
 In a training set, the data of class 1 (e.g. FR) and class 2 (e.g. non-FR) can be balanced or not. In the reality of an EEG recording, the proportion of non-FR signal is obviously largely dominant. To account for this phenomenon, we trained several models by assigning an increasingly strong weight to the non-FR class. 
 
-As shown in data tables in this repository ([main/markers_spike](https://github.com/LudovicGardy/Halyzia_weight_effect/tree/main/markers_spike)), false positives are almost always found on the same recording channels (GPH'2), as if they carry high frequencies that impact the detection, without this effect being caused by the spikes directly. Indeed, identical spikes on other recording channels are not detected.
+As shown in data tables in this repository ([main/markers_spike](https://github.com/LudovicGardy/halyzia_CNN_weights/tree/main/markers_spike)), false positives are almost always found on the same recording channels (GPH'2), as if they carry high frequencies that impact the detection, without this effect being caused by the spikes directly. Indeed, identical spikes on other recording channels are not detected.
 
 ## Installation
 
@@ -17,7 +17,7 @@ As shown in data tables in this repository ([main/markers_spike](https://github.
 - Python libraries: see requirements.txt
 
 ## Usage
-Detailed analysis here can be accessed and performed from [main.ipynb](https://github.com/LudovicGardy/Halyzia_weight_effect/blob/main/main.ipynb).
+Detailed analysis here can be accessed and performed from [main.ipynb](https://github.com/LudovicGardy/halyzia_CNN_weights/blob/main/main.ipynb).
 
 ## Input data
 - markers_FR: Fast Ripples detected in the EEG [1] [5]

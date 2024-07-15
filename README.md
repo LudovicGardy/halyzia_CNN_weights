@@ -1,9 +1,7 @@
-# Halyzia© / Ladybird Neural Network - Impact of class weights
+# Ladybird Neural Network - Impact of class weights
 
 ## 📄 Description
-Halyzia©, also known as Ladybird, is a sophisticated software designed for the automatic detection of fast-ripples (FRs) in epilepsy, as described in the [doctoral thesis of L. Gardy](http://thesesups.ups-tlse.fr/5164/1/2021TOU30190.pdf) and patented under [Brevet: FR3128111](https://data.inpi.fr/brevets/FR3128111). This repository showcases a component of Halyzia© that is focused on the efficient automatic detection of Fast Ripples (FR) in epilepsy.
-
-Depending on the amount of data to be analyzed, it may be interesting to vary the performance of the model, by varying the ratio between omissions and false positives. The more time we have to process the results, the less we will be constrained on false positives. The reduction of false positives generally goes hand in hand with a reduction of omissions. Conversely, the less time user has, the less time he will accept to sort out false positives, often at the cost of an increase in the number of omissions.
+This repository showcases a component of [Ladybird](#about-ladybird) that is focused on the efficient automatic detection of Fast Ripples (FR) in epilepsy. Depending on the amount of data to be analyzed, it may be interesting to vary the performance of the model, by varying the ratio between omissions and false positives. The more time we have to process the results, the less we will be constrained on false positives. The reduction of false positives generally goes hand in hand with a reduction of omissions. Conversely, the less time user has, the less time he will accept to sort out false positives, often at the cost of an increase in the number of omissions.
 
 In a training set, the data of class 1 (e.g. FR) and class 2 (e.g. non-FR) can be balanced or not. In the reality of an EEG recording, the proportion of non-FR signal is obviously largely dominant. To account for this phenomenon, we trained several models by assigning an increasingly strong weight to the non-FR class. 
 
@@ -45,6 +43,24 @@ The model was evaluated on open source data [see ref. 1] containing 5760 Spikes 
 [4] Roehri, N., Lina, J.-M., Mosher, J. C., Bartolomei, F., and Benar, C.-G. (2016). Time-frequency strategies for increasing high-frequency oscillation detectability in intracerebral eeg. IEEE Transactions on Biomedical Engineering, 63(12):2595–2606. https://doi.org/10.1109/TBME.2016.2556425
 
 [5] Gardy L., Barbeau E.J., Hurter C. Automatic Detection of Epileptic Spikes in Intracerebral EEG with Convolutional Kernel Density Estimation. Proceedings of the 15th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 2 : HUCAPP, pages 101-109, 2020. https://doi.org/10.5220/0008877601010109
+
+#### About Ladybird
+Ladybird, developed during [L. Gardy's doctoral research](http://thesesups.ups-tlse.fr/5164/1/2021TOU30190.pdf) under the guidance of [E. Barbeau](https://cerco.cnrs.fr/page-perso-emmanuel-j-barbeau-ph-d/) (neuroscientist, CNRS) and [C. Hurter](http://recherche.enac.fr/~hurter/presentation.html) (engineer, ENAC), is a sophisticated software designed for the automatic detection of fast-ripples (FRs) in epilepsy. Originally developed by L. Gardy, with significant input from various researchers and medical professionals the early trials in the neurology department at Toulouse Hospital, along with support from various academic and economic entities, led to widespread enthusiasm and substantial funding, allowing for further development and eventual patenting ([Brevet: FR3128111](https://data.inpi.fr/brevets/FR3128111)). Ladybird was later rebranded as Halyzia©, a name change necessitated for trademark reasons, and is now being further developed and commercialized by the French startup Avrio MedTech.
+
+<table style="width:100%;">
+  <tr>
+    <td style="width:50%;"><img src="images/ladybird1.jpg" alt="Image 1" style="width:100%;"></td>
+    <td style="width:50%;"><img src="images/ladybird2.jpg" alt="Image 2" style="width:100%;"></td>
+  </tr>
+  <tr>
+    <td style="width:50%;"><img src="images/ladybird3.jpg" alt="Image 3" style="width:100%;"></td>
+    <td style="width:50%;"><img src="images/ladybird4.jpg" alt="Image 4" style="width:100%;"></td>
+  </tr>
+  <tr>
+    <td style="width:50%;"><img src="images/ladybird5.jpg" alt="Image 3" style="width:100%;"></td>
+    <td style="width:50%;"><img src="images/ladybird6.jpg" alt="Image 4" style="width:100%;"></td>
+  </tr>
+</table>
 
 ## 👤 Author
 - LinkedIn: [Ludovic Gardy](https://www.linkedin.com/in/ludovic-gardy/)

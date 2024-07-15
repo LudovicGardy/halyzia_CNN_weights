@@ -1,4 +1,4 @@
-# Ladybird Neural Network - Impact of class weights
+# Ladybird Neural Network - Impact of Class Weights
 
 ## 📄 Description
 This repository showcases a component of [Ladybird](#about-ladybird) that is focused on the efficient automatic detection of Fast Ripples (FR) in epilepsy. Depending on the amount of data to be analyzed, it may be interesting to vary the performance of the model, by varying the ratio between omissions and false positives. The more time we have to process the results, the less we will be constrained on false positives. The reduction of false positives generally goes hand in hand with a reduction of omissions. Conversely, the less time user has, the less time he will accept to sort out false positives, often at the cost of an increase in the number of omissions.
